@@ -29,7 +29,9 @@ jobs:
     - run: npm ci
     - run: npm run build --if-present
     - run: npm test
-    - run: ./cov.sh
+    - run: rm -rf coverage
+    - run: mkdir coverage
+    - run: JS_COV=1 ./node_modules/.bin/mocha -R mocha-lcov-reporter > coverage/coverage_temp.lcov
     - run: npm run coverage
 
     - name: Coveralls
