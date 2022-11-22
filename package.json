@@ -5,7 +5,7 @@
   },
   "scripts": {
     "test": "mocha",
-    "covearage": "c8 mocha"
+    "coverage": "c8 mocha"
   },
   "devDependencies": {
     "c8": "^7.12.0",
