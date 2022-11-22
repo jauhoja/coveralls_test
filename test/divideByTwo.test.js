@@ -13,5 +13,10 @@ describe("divideByTwo", () => {
     });
     it("Throws an excetpion with string input", () => {
         expect(() => divideByTwo("asdf")).to.throw(TypeError);
-    })
+    });
+    /*
+    it("Throws an exception when given non-integer as an input", () => {
+        expect(() => divideByTwo(1.4)).to.throw(Error, "not an integer");
+    });
+    */
 });
