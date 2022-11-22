@@ -7,6 +7,7 @@
     "save-dev": "^0.0.1-security"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "coverage": "c8 mocha"
   }
 }
