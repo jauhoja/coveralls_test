@@ -4,6 +4,7 @@ function divideByTwo(dividend)
     {
         throw(new TypeError("Not a number"));
     }
+    console.log("Dividing " + dividend + " by 2");
     return dividend / 2;
 }
 
