@@ -32,6 +32,7 @@ jobs:
     - run: rm -rf coverage
     - run: mkdir coverage
     - run: JS_COV=1 ./node_modules/.bin/mocha -R mocha-lcov-reporter > coverage/coverage_temp.lcov
+    - run: sed 's,SF:,SF:lib/,' coverage/coverage_temp.lcov > coverage/coverage.lcov
     - run: npm run coverage
 
     - name: Coveralls
